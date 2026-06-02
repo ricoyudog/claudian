@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "installedAt": "2026-06-01T11:36:11.288Z",
+  "updatedAt": "2026-06-01T11:36:11.288Z",
+  "sourceRepo": "/opt/homebrew/lib/node_modules/corgispec",
+  "schema": "github-tracked",
+  "isolation": {
+    "mode": "none"
+  },
+  "files": {
+    ".claude/commands/corgi/apply.md": {
+      "sha256": "eb8bfbcd4d4db993108658943e79f8558c92580d8ad762d2471926c7bb03b092"
+    },
+    ".claude/commands/corgi/archive.md": {
+      "sha256": "c3f5da0ba3b271de43231c7b7be8d233e16710e0894051a2d56caf4f318033be"
+    },
+    ".claude/commands/corgi/explore.md": {
+      "sha256": "33cc8227fca772cecd79cf352e5da18516784e5b85773adb6d5e2de6f780b5c9"
+    },
+    ".claude/commands/corgi/install.md": {
+      "sha256": "267ee156f7702d26b327bbbe08a6314518381de67cec7e69ec3b32086bb50603"
+    },
+    ".claude/commands/corgi/lint.md": {
+      "sha256": "375636d9e19d4ece098c26631ab3ead80ca4f18ec95c440cb0b3a7a00fb561d9"
+    },
+    ".claude/commands/corgi/propose.md": {
+      "sha256": "1c58c954468c80b53f14e77766af4c0715e2189815572803b145df04dcd2d8aa"
+    },
+    ".claude/commands/corgi/review.md": {
+      "sha256": "9e15c3b0ba59c9d19dcfd47633d5471aa5d19bc0018ffb5bb994bd5c97ffc257"
+    },
+    ".claude/commands/corgi/verify.md": {
+      "sha256": "e429533997ad1a44ed559533bb8ea75c2620aed5a092e10f4281d08eae32998e"
+    },
+    ".opencode/commands/corgi-apply.md": {
+      "sha256": "eb50cf08008a4cc653a71b1bcfe75b044fc598112f41ecc2233274e4bea85213"
+    },
+    ".opencode/commands/corgi-archive.md": {
+      "sha256": "200ec7e705fe85144a78f37059cd28f51fea23863da566a29b75dea7f3b21ff3"
+    },
+    ".opencode/commands/corgi-ask.md": {
+      "sha256": "7c9d6d5d38d2cc12cd05550a6979372fb9ff76a3d8cb1879b257970114c112dc"
+    },
+    ".opencode/commands/corgi-explore.md": {
+      "sha256": "9e8f10b42dfbcbbdd6df11df234caac7ce6701f4f9ca5c50167217906598e596"
+    },
+    ".opencode/commands/corgi-human-qa.md": {
+      "sha256": "bfff0b41343a38d6ada3773cfadd74da69864b2f8cec7ee5771d006418c30a05"
+    },
+    ".opencode/commands/corgi-install.md": {
+      "sha256": "1732670447c0ffc96cf622e9f1d48d10e661e092bd709817463a10c0616d3840"
+    },
+    ".opencode/commands/corgi-lint.md": {
+      "sha256": "568fad3bc609a4443dbcd4410fb978c015ea4e7d464c43afc59fbad76b8add03"
+    },
+    ".opencode/commands/corgi-memory-init.md": {
+      "sha256": "aeb76990d8905dd0d6ccfdd22ee7ec0d55209b44a35cdafce1c9a238b214d7a2"
+    },
+    ".opencode/commands/corgi-migrate.md": {
+      "sha256": "ed211578de6f1b5268f9b7602d44b01ea2ac1ac911845e36d3bd19044ce4c301"
+    },
+    ".opencode/commands/corgi-propose.md": {
+      "sha256": "8bae15f6b36c6e9786e38c5c44b09abacc8e3827c6551186db67b895289d5273"
+    },
+    ".opencode/commands/corgi-review.md": {
+      "sha256": "2e29b161df33fbfd1789c2175665b6b0e04df1f8cb796558762fc8b588e6324d"
+    },
+    ".opencode/commands/corgi-verify.md": {
+      "sha256": "4696028843f0a77e73908abc53005918914ed06c84fc5d63b740e67c7d845fd0"
+    },
+    "openspec/schemas/github-tracked/schema.yaml": {
+      "sha256": "0e1f68c8a771ce9e3f8ff5cc80cbeb7458a94c1c00f394088b8c419099a8b03b"
+    },
+    "openspec/schemas/github-tracked/templates/design.md": {
+      "sha256": "3395daa1c2f335aab03e4773a7d8a7d2c369579d153d359e7bb44420cacbd157"
+    },
+    "openspec/schemas/github-tracked/templates/proposal.md": {
+      "sha256": "f95443494733df102974c4ac27c6f693757b82b2378b1240d39d13b7f3738b85"
+    },
+    "openspec/schemas/github-tracked/templates/spec.md": {
+      "sha256": "e025078f238dc6e4df552a1e0a140cf9efce0bbdecbeb9f45837d45ed91dca01"
+    },
+    "openspec/schemas/github-tracked/templates/tasks.md": {
+      "sha256": "ec0186d5b119d149e9b5ddb913a0b809ecb2499cea276a03183fc2f5658416f8"
+    }
+  }
+}

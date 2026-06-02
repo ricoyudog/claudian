@@ -1,0 +1,16 @@
+name: hermes-command-catalog-and-profile-selector
+schema: github-tracked
+created: '2026-06-01'
+artifacts:
+  - id: proposal
+    path: proposal.md
+    status: done
+  - id: specs
+    path: specs/
+    status: done
+  - id: design
+    path: design.md
+    status: done
+  - id: tasks
+    path: tasks.md
+    status: done

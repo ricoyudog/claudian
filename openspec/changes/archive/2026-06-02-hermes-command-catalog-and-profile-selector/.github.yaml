@@ -1,0 +1,20 @@
+parent:
+  number: 1
+  url: https://github.com/ricoyudog/claudian/issues/1
+groups:
+  - number: 1
+    name: "Command Catalog Infrastructure"
+    issue_number: 2
+    url: https://github.com/ricoyudog/claudian/issues/2
+  - number: 2
+    name: "Profile Setting & Persistence"
+    issue_number: 3
+    url: https://github.com/ricoyudog/claudian/issues/3
+  - number: 3
+    name: "Profile Selector UI"
+    issue_number: 4
+    url: https://github.com/ricoyudog/claudian/issues/4
+  - number: 4
+    name: "Runtime Profile Integration"
+    issue_number: 5
+    url: https://github.com/ricoyudog/claudian/issues/5

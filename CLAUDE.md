@@ -1,5 +1,23 @@
 # CLAUDE.md
 
+## Git & Fork Policy
+
+All development MUST happen on the **ricoyudog/claudian** fork, NOT on the upstream `YishenTu/claudian`.
+
+- **Fork remote**: `fork` → `https://github.com/ricoyudog/claudian.git`
+- **Upstream remote**: `origin` → `https://github.com/YishenTu/claudian.git` (read-only, for syncing upstream changes)
+- **Branch workflow**: Create feature branches from `main`, push to `fork`, open PRs from `ricoyudog/claudian` → `YishenTu/claudian`
+- **Never push directly to `origin`** — always go through `fork`
+- **Create GitHub issues on `ricoyudog/claudian`** — use the fork repo for issue tracking, never on upstream `YishenTu/claudian`
+
+```bash
+# Correct: push to fork
+git push fork feat/my-feature
+
+# Wrong: push to upstream
+git push origin feat/my-feature  # ❌ NEVER DO THIS
+```
+
 ## Project Overview
 
 Claudian is an Obsidian plugin that embeds provider-backed chat runtimes in a sidebar and inline-edit flow. Claude is the default provider. Codex is optional and joins the same conversation model through `Conversation.providerId` plus provider-owned `providerState`.

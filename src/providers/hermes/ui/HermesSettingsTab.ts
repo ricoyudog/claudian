@@ -80,6 +80,19 @@ export const hermesSettingsTabRenderer: ProviderSettingsTabRenderer = {
         })
     );
 
+    new Setting(container)
+      .setName('Agent profile')
+      .setDesc('Optional Hermes agent profile name. Passed as `--profile` when starting `hermes acp`.')
+      .addText((text) =>
+        text
+          .setValue(hermesSettings.profile)
+          .setPlaceholder('default')
+          .onChange(async (value) => {
+            updateHermesProviderSettings(settingsBag, { profile: value.trim() });
+            await context.plugin.saveSettings();
+          })
+      );
+
     new Setting(container).setName('Configuration').setHeading();
 
     renderEnvironmentSettingsSection({

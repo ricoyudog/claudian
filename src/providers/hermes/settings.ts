@@ -21,6 +21,7 @@ export interface PersistedHermesProviderSettings {
   environmentVariables: string;
   modelAliases: Record<string, string>;
   preferredThinkingByModel: Record<string, string>;
+  profile: string;
   visibleModels: string[];
 }
 
@@ -35,6 +36,7 @@ export const DEFAULT_HERMES_PROVIDER_SETTINGS: Readonly<PersistedHermesProviderS
   environmentVariables: HERMES_DEFAULT_ENVIRONMENT_VARIABLES,
   modelAliases: {},
   preferredThinkingByModel: {},
+  profile: '',
   visibleModels: [],
 });
 
@@ -160,6 +162,7 @@ export function getHermesProviderSettings(
     preferredThinkingByModel: normalizeHermesPreferredThinkingByModel(
       config.preferredThinkingByModel,
     ),
+    profile: typeof config.profile === 'string' ? config.profile.trim() : DEFAULT_HERMES_PROVIDER_SETTINGS.profile,
     visibleModels: normalizeHermesVisibleModels(config.visibleModels, discoveredModels),
   };
 }
@@ -219,6 +222,7 @@ export function updateHermesProviderSettings(
     preferredThinkingByModel: normalizeHermesPreferredThinkingByModel(
       updates.preferredThinkingByModel ?? current.preferredThinkingByModel,
     ),
+    profile: typeof updates.profile === 'string' ? updates.profile.trim() : current.profile,
     visibleModels: nextVisibleModels,
   };
 
@@ -231,6 +235,7 @@ export function updateHermesProviderSettings(
     environmentVariables: next.environmentVariables,
     modelAliases: next.modelAliases,
     preferredThinkingByModel: next.preferredThinkingByModel,
+    profile: next.profile,
     visibleModels: next.visibleModels,
   });
 

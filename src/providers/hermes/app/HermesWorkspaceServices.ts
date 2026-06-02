@@ -5,6 +5,7 @@ import type {
   ProviderWorkspaceServices,
 } from '../../../core/providers/types';
 import type { VaultFileAdapter } from '../../../core/storage/VaultFileAdapter';
+import { HermesCommandCatalog } from '../commands/HermesCommandCatalog';
 import { HermesCliResolver } from '../runtime/HermesCliResolver';
 import { hermesSettingsTabRenderer } from '../ui/HermesSettingsTab';
 
@@ -23,6 +24,7 @@ export async function createHermesWorkspaceServices(
 ): Promise<HermesWorkspaceServices> {
   return {
     cliResolver: new HermesCliResolver(),
+    commandCatalog: new HermesCommandCatalog(),
     settingsTabRenderer: hermesSettingsTabRenderer,
     tabWarmupPolicy: hermesTabWarmupPolicy,
   };

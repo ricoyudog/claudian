@@ -181,6 +181,7 @@ export class HermesChatRuntime implements ChatRuntime {
 		const nextLaunchKey = JSON.stringify({
 			command: resolvedCliPath,
 			envText: getRuntimeEnvironmentText(this.plugin.settings, 'hermes'),
+			profile: settings.profile,
 		});
 
 		const shouldRestart = !this.process
@@ -467,8 +468,14 @@ export class HermesChatRuntime implements ChatRuntime {
 			),
 		};
 
+		const hermesSettings = getHermesProviderSettings(this.plugin.settings);
+		const args = ['acp'];
+		if (hermesSettings.profile) {
+			args.push('--profile', hermesSettings.profile);
+		}
+
 		this.process = new AcpSubprocess({
-			args: ['acp'],
+			args,
 			command: params.command,
 			cwd: params.cwd,
 			env: processEnv,
